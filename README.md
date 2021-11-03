@@ -63,3 +63,6 @@ _**Above:** Requests made across multiple pages of the app are authenticated usi
 https://shopify.dev/apps/auth/session-tokens/server-side-rendered-apps
 https://shopify.dev/apps/payments/general-transaction-requirements
 https://shopify.dev/apps/payments/processing-a-payment#initiate-the-payment-flow
+
+APP URL: https://shopify-turbolink-wan.herokuapp.com/
+Allowed redirection URL(s): https://shopify-turbolink-wan.herokuapp.com/auth/shopify/callback
