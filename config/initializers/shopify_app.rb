@@ -10,6 +10,7 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
   config.after_authenticate_job = false
   config.api_version = "2020-04"
+  # [ShopifyAPI::ApiVersion] Known API Versions: ["2021-01", "2021-04", "2021-07", "2021-10", "2022-01", "unstable"]
   config.shop_session_repository = 'Shop'
   config.allow_jwt_authentication = true
   config.webhooks = [
