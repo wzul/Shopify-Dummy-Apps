@@ -1,0 +1,8 @@
+<%= link_to 'Back to Option', options_path(shop: @shop_origin) %>
+<%= link_to 'Back to Record', @option %>
+
+<%= form_for(@option, remote: true) do |f| %>
+  <%= f.label :collection_slug %>
+  <%= f.text_field :collection_slug %>
+  <%= f.submit "Update", data: {disable_with: "Loading.."}, class: "btn btn-primary" %>
+<% end %>

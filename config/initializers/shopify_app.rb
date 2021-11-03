@@ -5,6 +5,7 @@ ShopifyApp.configure do |config|
   config.old_secret = ""
   config.scope = "read_products" # Consult this page for more scope options:
                                  # https://help.shopify.com/en/api/getting-started/authentication/oauth/scopes
+  # config.scope = "read_products,write_payment_gateways,write_payment_sessions,read_payment_gateways,read_payment_sessions"            
   config.reauth_on_access_scope_changes = true
   config.embedded_app = true
   config.after_authenticate_job = false

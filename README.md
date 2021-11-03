@@ -57,3 +57,9 @@ _**Above:** Requests made across multiple pages of the app are authenticated usi
 [//]: # "Links"
 [s1]: public/screenshot-1.png
 [s2]: public/screenshot-2.png
+
+## Notes
+
+https://shopify.dev/apps/auth/session-tokens/server-side-rendered-apps
+https://shopify.dev/apps/payments/general-transaction-requirements
+https://shopify.dev/apps/payments/processing-a-payment#initiate-the-payment-flow

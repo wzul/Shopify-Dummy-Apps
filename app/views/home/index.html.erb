@@ -1,3 +1,30 @@
 <%= link_to 'Products', products_path(shop: @shop_origin) %>
 <br>
 <%= link_to 'Widgets', widgets_path(shop: @shop_origin) %>
+<br>
+<%= link_to 'Options', options_path(shop: @shop_origin) %>
+<br>
+<% #binding.pry %>
+<% 
+
+# @current_shopify_session 
+# => #<ShopifyAPI::Session:0x0000557695c7e0f0
+#  @access_scopes=
+#   #<ShopifyAPI::ApiAccess:0x0000557695c6e448
+#    @compressed_scopes=#<Set: {"read_products"}>,
+#    @expanded_scopes=#<Set: {"read_products"}>>,
+#  @api_version=
+#   #<ShopifyAPI::ApiVersion:0x000055769810c980
+#    @display_name="2020-04",
+#    @handle="2020-04",
+#    @latest_supported=false,
+#    @supported=false,
+#    @verified=false>,
+#  @domain="wan-zulkarnain-2-test-store.myshopify.com",
+#  @extra={},
+#  @token="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">
+
+# Shop.retrieve_by_shopify_domain @current_shopify_session.domain
+# ShopifyAPI::Base.site
+
+%>

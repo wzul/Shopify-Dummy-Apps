@@ -1,0 +1,7 @@
+<%= link_to 'Back', options_path(shop: @shop_origin) %>
+
+<%= form_for(@option, remote: true) do |f| %>
+  <%= f.label :collection_slug %>
+  <%= f.text_field :collection_slug %>
+  <%= f.submit "Create", data: {disable_with: "Loading.."}, class: "btn btn-primary" %>
+<% end %>

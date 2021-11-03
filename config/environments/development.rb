@@ -1,5 +1,7 @@
 Rails.application.configure do
   config.hosts = (config.hosts rescue []) << /\h+.ngrok.io/
+  config.hosts << "7929-2001-f40-904-680d-61e6-499-d3a5-686d.ngrok.io"
+  config.hosts << /[a-z0-9\-]+\.ngrok.io/
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -42,6 +44,7 @@ Rails.application.configure do
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
+  config.web_console.whiny_requests = false
 
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true

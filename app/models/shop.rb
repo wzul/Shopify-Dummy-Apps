@@ -2,6 +2,8 @@
 class Shop < ActiveRecord::Base
   include ShopifyApp::ShopSessionStorageWithScopes
 
+  has_many :options, dependent: :destroy
+
   def uninstall
     destroy
   end
